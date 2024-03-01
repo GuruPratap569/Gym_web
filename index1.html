@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru's Website</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2&family=Montserrat:wght@500&family=Playpen+Sans:wght@100&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset  */
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url(https://cdn.pixabay.com/photo/2019/02/19/14/43/fitness-4006937_1280.jpg);
+    background-size: contain;
+   height:1300px;
+   color: white;
+   font-family:'Baloo Bhaijaan 2', sans-serif;
+}
+.header , .container{
+    text-align: center;
+}
+
+.left{
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    line-height:0px ;
+}
+
+.mid {
+    /* border: 2px solid yellow; */
+    /* display: block; */
+    width: 60%;
+    margin: 0px auto;
+    /* position: absolute; */
+    left: 250px;
+    line-height: 0px;
+   
+}
+
+.right{
+    /* border: 2px solid green; */
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.header img{
+    width: 90px;
+    height: 90px;
+    filter: invert(100%);
+}
+.name{
+    line-height: 20px;
+    padding: 0px 10px;
+}
+.navbar li {
+    display: inline-block;
+    
+    
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    /* font-family:'Baloo Bhaijaan 2', sans-serif; */
+    font-weight: bold;
+    padding: 17px;
+    
+}
+
+.btn{
+    background-color: rgb(121, 119, 119);
+    color: white;
+    font-size: 16px;
+    margin: 0px 4px;
+    padding: 9px 4px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover, .submit:hover {
+background-color: rgb(52, 49, 49);
+}
+.navbar li a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+    
+.container{
+    border: 3px solid white;
+    border-radius: 29px;
+    width: 40%;
+    /* height: 324px; */
+position: absolute;
+top: 330px;
+right: 10px;
+line-height: 20px;
+
+}
+
+.formgroup input , .submit {
+    font-size: 17px;
+    margin: 4px auto;
+    padding: 9px 0px;
+    width: 80%;
+        border-radius: 10px;  
+}  
+.left,.right,.mid{
+    position:fixed;
+    top: 10px;
+}
+
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+          <img src="img/logo.jpg" alt="">
+          <div class="name">
+            Guru+Fitness
+          </div>
+        </div>
+
+        <div class="mid" >
+            <ul class="navbar">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Fitness Caculator</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Contact Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym in Delhi Now</h1>
+        <form action="noaction">
+            <div class="formgroup">
+            <input type="text" placeholder="Enter your Name">
+        </div>
+            <div class="formgroup">
+            <input type="text" placeholder="Enter your Age">
+        </div>
+            <div class="formgroup">
+            <input type="text" placeholder="Enter your Gender">
+        </div>
+            <div class="formgroup">
+            <input type="text" placeholder="Enter your Locality">
+        </div>
+        <div>
+            <button class="submit">
+                Submit Now
+            </button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
